@@ -1,0 +1,29 @@
+@import "vars"
+
+.container
+	+wrapper()
+
+.row
+	+row-flex()
+
+@media screen and (max-width: 780px)
+
+	.parallax
+		position: static
+
+@media screen and (max-width: 560px)
+
+	.login__logo
+		margin: 50px 0
+		margin-bottom: 20px
+		min-height: 200px
+		min-width: 200px
+
+		.login__h1
+			font-size: 30px
+
+	.login__h2
+		margin-bottom: 0
+
+	.login__a
+		margin-bottom: 20px

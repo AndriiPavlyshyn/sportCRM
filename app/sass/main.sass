@@ -1,0 +1,114 @@
+@import "vars"
+@import "_plugins/_normalize"
+@import "_plugins/_animate"
+@import "_plugins/_materialize"
+@import "_plugins/_custom-animations"
+@import "fonts"
+@import "libs"
+@import "smart-grid"
+
+/* Components */
+
+@import "_components/defaults"
+@import "_components/buttons"
+@import "_components/inputs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html,
+body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+	input,
+	textarea
+		border: #666 1px solid
+		outline: none
+
+		&:focus:required:invalid
+			border-color: red
+
+			&:required:valid
+				border-color: violet
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+// Header
+
+@import "_components/header"
+
+// Login page form
+
+.login__logo
+	height: 200px
+	width: 200px
+	background: $accent
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	border-radius: 100%
+	margin-bottom: 100px
+
+	.login__h1
+		color: #fff
+		font-size: 40px
+
+.login__a
+	margin-top: 30px
+
+.login__wrapper
+	background: $light-grey
+
+.login-form
+	width: 100%
+	max-width: 560px
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+.container--login
+	height: 100vh
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	background: $light-grey
+
+.input-field--login
+	width: 70%
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+	i
+		margin-top: -10px
+
+.btn-large--login
+	margin-top: 20px
+
+// Always at the end
+@import "media"
