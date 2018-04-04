@@ -12594,7 +12594,7 @@ body textarea:focus:required:invalid:required:valid {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
