@@ -1,5 +1,29 @@
-.btn
+.btn,
+.btn-large
   background: $light-blue
 
   &:hover
     background: darken($light-blue, 10%)
+    color: #fff
+
+// Fixed plus button
+
+.btn--plus
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 25px
+  background: $green
+  box-sizing: border-box
+  transition: 0.5s
+
+  &:hover
+    background: darken($green, 10%)
+    box-sizing: border-box
+    transition: 0.5s
+
+  svg
+    height: 30px
+    width: 30px
