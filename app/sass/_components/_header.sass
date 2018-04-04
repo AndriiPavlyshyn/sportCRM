@@ -24,8 +24,8 @@
 	.logo__h1
 		color: #fff
 		font-size: $h2
-		margin: 0
 		margin-left: 50px
+		margin: 0
 
 .logo__a
 	border: 0
@@ -59,10 +59,10 @@
 		padding: 0 45px 0 30px
 
 		&:focus
+			background: $light-grey
 			border: none !important
 			box-shadow: none !important
 			outline: none
-			background: $light-grey
 
 	.search__label
 		align-items: center
@@ -96,11 +96,11 @@
 
 .account-logo__a
 	align-items: center
+	border: 0
 	display: -ms-flex
 	display: -webkit-flex
 	display: flex
 	justify-content: center
-	border: 0
 	margin-right: 100px
 
 	i
@@ -119,25 +119,25 @@
 // Burger button in header
 
 .button-collapse-wrapper
-	width: 5%
+	align-items: center
+	display: -ms-flex
+	display: -webkit-flex
+	display: flex
 	float: left
 	height: 100%
-	display: -webkit-flex
-	display: -ms-flex
-	display: flex
-	align-items: center
 	justify-content: center
+	width: 5%
 
 .button-collapse--burger
-	height: 50px
-	width: 50px
-	float: left
-	display: -webkit-flex
-	display: -ms-flex
-	display: flex
 	align-items: center
-	justify-content: center
 	border: 0
+	display: -ms-flex
+	display: -webkit-flex
+	display: flex
+	float: left
+	height: 50px
+	justify-content: center
+	width: 50px
 
 	&:hover
 		border: 0
@@ -146,8 +146,8 @@
 			color: $light-grey
 
 	i
-		font-size: 40px
 		color: #fff
+		font-size: 40px
 		transition: 0.5s
 
 #sidenav-overlay
@@ -159,22 +159,27 @@
 	width: 100%
 
 	li
-		width: 100%
-		display: -webkit-flex
+		align-items: center
 		display: -ms-flex
+		display: -webkit-flex
 		display: flex
 		justify-content: flex-start
-		align-items: center
 		text-align: center
-		padding: 10px 0
+		width: 100%
 
 		a
+			height: 60px
 			width: 100%
 			display: -webkit-flex
 			display: -ms-flex
 			display: flex
 			align-items: center
 			font-size: 1.2em
+			border: none
+
+		&:hover
+			a
+				border: none
 
 		svg
 			margin: 0 20px

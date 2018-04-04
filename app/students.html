@@ -15,7 +15,7 @@
 			<h1 class="logo__h1">sportCRM</h1>
 		</a>
 	</div>
-	<div class="search-wrapper">
+	<div class="search-wrapper mobile-none">
 		<input name="search" id="search" class="search" placeholder="Искать...">
 		<label class="search__label" for="search">
 			<i class="material-icons">search</i>
@@ -34,6 +34,13 @@
 <div id="slide-out" class="side-nav">
 	<div class="menu__wrapper">
 		<ul class="navigation">
+			<div class="search-wrapper search-wrapper--mobile mobile-block">
+				<input name="search" id="search" class="search" placeholder="Искать...">
+				<label class="search__label" for="search">
+					<i class="material-icons">search</i>
+				</label>
+				<div class="search-results"></div>
+			</div>
 			<li>
 				<a href="#">
 					<i class="fas fa-home"></i>Главная</a>
@@ -44,7 +51,7 @@
 			</li>
 			<li>
 				<a href="#">
-					<i class="fas fa-folder-open"></i>Операции></a>
+					<i class="fas fa-folder-open"></i>Операции</a>
 			</li>
 			<li>
 				<a href="#">

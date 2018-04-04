@@ -6,21 +6,40 @@
 .row
 	+row-flex()
 
+@media screen and (max-width: 1100px)
+
+	.header__logo
+		justify-content: center
+		width: 30%
+
+	.search-wrapper
+		width: 40%
+
+	.account-logo-wrapper,
+	.button-collapse-wrapper
+		width: 15%
+		justify-content: center
+
+	.account-logo__a
+		margin-right: 0
+
 @media screen and (max-width: 780px)
 
-	.parallax
-		position: static
+	.mobile-none
+		display: none
+
+	.mobile-block
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+
+	.search-wrapper--mobile
+		width: 100%
+
+	.header__logo
+		width: 70%
 
 @media screen and (max-width: 560px)
-
-	.login__logo
-		margin: 50px 0
-		margin-bottom: 20px
-		min-height: 200px
-		min-width: 200px
-
-		.login__h1
-			font-size: 30px
 
 	.login__h2
 		margin-bottom: 0
