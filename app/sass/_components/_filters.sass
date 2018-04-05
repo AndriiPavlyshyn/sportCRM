@@ -1,12 +1,22 @@
-.filter__header
+.filter__header,
+.form--filter__header
   display: -webkit-flex
   display: -ms-flex
   display: flex
   align-items: center
+  justify-content: space-between
+  padding: 20px
+
+.form--filter__header
+  padding: 0
 
 .filter__h4
   margin: 0
   display: block
+  margin-left: 15px
+
+.filter__p
+  margin: 0
 
 .filter__a
   color: $blue
@@ -16,5 +26,52 @@
   &:hover
     color: $light-blue
 
-.filter__a--defaults
-  margin: 0 30px
+.filter__title
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+
+.filter-checkbox__wrapper
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  width: 100%
+  margin: 10px 0 10px 20%
+
+.filter__balance-inputs-wrapper
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-between
+
+  .input-field
+    width: 48%
+
+  .input-field--balance
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+
+    .balance__p-wrapper
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      justify-content: center
+      align-items: center
+
+    input
+      width: 80%
+
+    .filter__p
+      width: 20%
+
+.filter-checkbox__wrapper--warning
+  margin: 20px 0
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  justify-content: center

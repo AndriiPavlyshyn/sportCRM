@@ -1,0 +1,36 @@
+.input-field--filter
+  width: 100%
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  color: $blue
+  font-size: 25px
+
+  svg
+    margin-left: 20px
+
+.datepicker--filter
+  width: 80%
+
+// Datepicker styles
+
+.picker__date-display
+  background: $blue
+
+.picker__close,
+.picker__today
+  color: $blue
+
+button.picker__today:focus,
+button.picker__clear:focus,
+button.picker__close:focus
+  background: lighten($blue, 50%)
+
+.picker__day--selected,
+.picker__day--selected:hover,
+.picker--focused .picker__day--selected
+  background: $blue
+
+.picker__day.picker__day--today
+  color: $blue

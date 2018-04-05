@@ -21,6 +21,8 @@
 		<meta name="theme-color" content="#000">
 		<!-- Custom Browsers Color End -->
 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
 
@@ -245,10 +247,14 @@
 					</td>
 				</tr>
 				<tr>
-					<td><div class="green-signal active"></div></td>
+					<td>
+						<div class="green-signal active"></div>
+					</td>
 					<td>Костогрыз Елисей</td>
 					<td>6/67</td>
-					<td>4 Дан <div class="squere-indicator red"></div></td>
+					<td>4 Дан
+						<div class="squere-indicator red"></div>
+					</td>
 					<td>дети</td>
 					<td>450</td>
 					<td></td>
@@ -258,37 +264,35 @@
 		</div>
 	</div>
 </div>
+<div class="fixed-action-btn">
+	<a class="btn-floating btn-large btn--plus">
+		<i class="fas fa-plus"></i>
+	</a>
+	<ul>
+		<li>
+			<a class="btn-floating red">
+				<i class="material-icons">insert_chart</i>
+			</a>
+		</li>
+		<li>
+			<a class="btn-floating yellow darken-1">
+				<i class="material-icons">format_quote</i>
+			</a>
+		</li>
+		<li>
+			<a class="btn-floating green">
+				<i class="material-icons">publish</i>
+			</a>
+		</li>
+		<li>
+			<a class="btn-floating blue">
+				<i class="material-icons">attach_file</i>
+			</a>
+		</li>
+	</ul>
+</div>
 
-
-	<div class="fixed-action-btn">
-		<a class="btn-floating btn-large btn--plus">
-			<i class="fas fa-plus"></i>
-		</a>
-		<ul>
-			<li>
-				<a class="btn-floating red">
-					<i class="material-icons">insert_chart</i>
-				</a>
-			</li>
-			<li>
-				<a class="btn-floating yellow darken-1">
-					<i class="material-icons">format_quote</i>
-				</a>
-			</li>
-			<li>
-				<a class="btn-floating green">
-					<i class="material-icons">publish</i>
-				</a>
-			</li>
-			<li>
-				<a class="btn-floating blue">
-					<i class="material-icons">attach_file</i>
-				</a>
-			</li>
-		</ul>
-	</div>
-
-	<ul id='dropdown1' class='dropdown-content dropdown-content--account-popup z-depth-2'>
+<ul id='dropdown1' class='dropdown-content dropdown-content--account-popup z-depth-2'>
 	<li class="popup-content">
 		<div class="popup__name">
 			<div class="member__wrapper">
@@ -333,22 +337,152 @@
 	</li>
 </ul>
 
-	
 
-	<ul id='dropdown2' class='dropdown-content dropdown-content--account-popup z-depth-2'>
-		<li class="popup-content">
-			<div class="filter-wrapper">
-				<div class="filter__header">
+
+<ul id='dropdown2' class='dropdown-content dropdown-content--account-popup z-depth-2'>
+	<li class="popup-content">
+		<div class="filter-wrapper">
+			<div class="filter__header">
+				<div class="filter__title">
 					<a href="#" class="filter__a">
 						<i class="material-icons">arrow_back</i>
 					</a>
 					<h4 class="filter__h4">Фильтр</h4>
-					<a href="#" class="filter__a filter__a--defaults">сбросить все</a>
 				</div>
+				<a href="#" class="filter__a filter__a--defaults">сбросить все</a>
 			</div>
-		</li>
-	</ul>
+			<form action="#" class="form form--filter">
+				<div class="form--filter__header">
+					<p class="filter__p">Дата</p>
+					<a href="#" class="filter__a filter__a--defaults">сбросить</a>
+				</div>
+				<div class="form--filter__body">
+					<div class="filter__input-wrapper">
+						<div class="filter__p--time-wrapper">
+							<p class="filter__p filter__p--time">с</p>
+						</div>
+						<div class="input-field input-field--filter">
+							<input placeholder="Выберите дату" type="text" class="datepicker datepicker--filter">
+							<i class="fas fa-calendar-alt"></i>
+						</div>
+					</div>
+					<div class="filter__input-wrapper">
+						<div class="filter__p--time-wrapper">
+							<p class="filter__p filter__p--time">до</p>
+						</div>
+						<div class="input-field input-field--filter">
+							<input placeholder="Выберите дату" type="text" class="datepicker datepicker--filter">
+							<i class="fas fa-calendar-alt"></i>
+						</div>
+					</div>
+				</div>
+				<div class="form--filter__header">
+					<p class="filter__p">Группы</p>
+					<a href="#" class="filter__a filter__a--defaults">сбросить</a>
+				</div>
+				<div class="form--filter__body">
+					<div class="filter-checkbox__wrapper">
+						<input type="checkbox" id="first-check" />
+						<label for="first-check">1/67</label>
+					</div>
+					<div class="filter-checkbox__wrapper">
+						<input type="checkbox" id="second-check" />
+						<label for="second-check">1/67</label>
+					</div>
+					<div class="filter-checkbox__wrapper">
+						<input type="checkbox" id="third-check" />
+						<label for="third-check">1/67</label>
+					</div>
+				</div>
+				<div class="form--filter__header">
+					<p class="filter__p">Цвет пояса</p>
+					<a href="#" class="filter__a filter__a--defaults">сбросить</a>
+				</div>
+				<div class="form--filter__body">
+					<div class="filter-checkbox__wrapper">
+						<input type="checkbox" id="color-check" />
+						<label for="color-check">Белый</label>
+					</div>
+					<div class="filter-checkbox__wrapper">
+						<input type="checkbox" id="color-2-check" />
+						<label for="color-2-check">Красный</label>
+					</div>
+					<div class="filter-checkbox__wrapper">
+						<input type="checkbox" id="color-3-check" />
+						<label for="color-3-check">Зеленый</label>
+					</div>
+				</div>
+				<div class="form--filter__header">
+					<p class="filter__p">Кю/дан</p>
+					<a href="#" class="filter__a filter__a--defaults">сбросить</a>
+				</div>
+				<div class="form--filter__body">
+					<div class="filter-checkbox__wrapper">
+						<input type="checkbox" id="dan-check" />
+						<label for="dan-check">9</label>
+					</div>
+					<div class="filter-checkbox__wrapper">
+						<input type="checkbox" id="dan-2-check" />
+						<label for="dan-2-check">8</label>
+					</div>
+					<div class="filter-checkbox__wrapper">
+						<input type="checkbox" id="dan-3-check" />
+						<label for="dan-3-check">7</label>
+					</div>
+				</div>
+				<div class="form--filter__header">
+					<p class="filter__p">Категория</p>
+					<a href="#" class="filter__a filter__a--defaults">сбросить</a>
+				</div>
+				<div class="form--filter__body">
+					<div class="filter-checkbox__wrapper">
+						<input type="checkbox" id="category-check" />
+						<label for="category-check">Взрослые</label>
+					</div>
+					<div class="filter-checkbox__wrapper">
+						<input type="checkbox" id="category-2-check" />
+						<label for="category-2-check">Дети</label>
+					</div>
+					<div class="filter-checkbox__wrapper">
+						<input type="checkbox" id="category-3-check" />
+						<label for="category-3-check">Подростки</label>
+					</div>
+				</div>
+				<div class="form--filter__header">
+					<p class="filter__p">Баланс</p>
+					<a href="#" class="filter__a filter__a--defaults">сбросить</a>
+				</div>
+				<div class="form--filter__body">
+					<div class="filter__balance-inputs-wrapper">
+						<div class="input-field">
+							<select>
+								<option value="1">Больше</option>
+								<option value="2">Меньше</option>
+							</select>
+						</div>
+						<div class="input-field input-field--balance">
+							<input type="text">
+							<div class="balance__p-wrapper">
+								<p class="filter__p">грн</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form--filter__header">
+					<p class="filter__p">Предупреждения</p>
+					<a href="#" class="filter__a filter__a--defaults">сбросить</a>
+				</div>
+				<div class="form--filter__body">
+					<div class="filter-checkbox__wrapper filter-checkbox__wrapper--warning">
+						<input type="checkbox" id="warnings-check" />
+						<label for="warnings-check">Есть предупреждения</label>
+					</div>
+				</div>
+			</form>
+		</div>
+	</li>
+</ul>
 
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <script src="js/scripts.min.js"></script>
 
