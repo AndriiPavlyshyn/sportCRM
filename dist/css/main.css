@@ -12100,7 +12100,6 @@ h4 {
 
 h2 {
   font-size: 35px;
-  text-transform: uppercase;
 }
 
 a {
@@ -12323,7 +12322,7 @@ body textarea:focus:required:invalid:required:valid {
 }
 
 .search-wrapper .search:focus {
-  background: #F5F5F5;
+  background: #e3dede;
   border: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -12416,7 +12415,7 @@ body textarea:focus:required:invalid:required:valid {
 }
 
 .account-logo__a:hover i {
-  color: #F5F5F5;
+  color: #e3dede;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -12466,7 +12465,7 @@ body textarea:focus:required:invalid:required:valid {
 }
 
 .button-collapse--burger:hover i {
-  color: #F5F5F5;
+  color: #e3dede;
 }
 
 .button-collapse--burger i {
@@ -12541,11 +12540,11 @@ body textarea:focus:required:invalid:required:valid {
 .popup-content {
   position: relative;
   display: block;
-  background: #F5F5F5;
+  background: #e3dede;
 }
 
 .popup-content:hover {
-  background: #F5F5F5 !important;
+  background: #e3dede !important;
   cursor: auto !important;
 }
 
@@ -12619,7 +12618,7 @@ body textarea:focus:required:invalid:required:valid {
   font-size: 15px;
   margin: 10px 0 0 0;
   width: 100%;
-  color: darkgray;
+  color: #9d8b8b;
 }
 
 .popup-content .popup__member-position {
@@ -12825,7 +12824,7 @@ body textarea:focus:required:invalid:required:valid {
 }
 
 .table--students {
-  border: 1px solid #F5F5F5;
+  border: 1px solid #e3dede;
 }
 
 .table--students thead {
@@ -12885,7 +12884,7 @@ body textarea:focus:required:invalid:required:valid {
   width: 15px;
   -webkit-border-radius: 100%;
   border-radius: 100%;
-  background: #616161;
+  background: #e3dede;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12967,7 +12966,7 @@ body textarea:focus:required:invalid:required:valid {
 }
 
 .login__wrapper {
-  background: #F5F5F5;
+  background: #e3dede;
 }
 
 .login-form {
@@ -12998,7 +12997,7 @@ body textarea:focus:required:invalid:required:valid {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #F5F5F5;
+  background: #e3dede;
   display: -ms-flex;
   display: -webkit-flex;
   display: -webkit-box;

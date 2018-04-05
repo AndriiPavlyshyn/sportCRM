@@ -8996,8 +8996,7 @@ h4 {
   font-weight: 300; }
 
 h2 {
-  font-size: 35px;
-  text-transform: uppercase; }
+  font-size: 35px; }
 
 a {
   color: #2296F3;
@@ -9180,7 +9179,7 @@ body {
     margin: 0;
     padding: 0 45px 0 30px; }
     .search-wrapper .search:focus {
-      background: #F5F5F5;
+      background: #e3dede;
       border: none !important;
       -webkit-box-shadow: none !important;
               box-shadow: none !important;
@@ -9259,7 +9258,7 @@ body {
     -o-transition: 0.5s;
     transition: 0.5s; }
     .account-logo__a:hover i {
-      color: #F5F5F5;
+      color: #e3dede;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
@@ -9303,7 +9302,7 @@ body {
   .button-collapse--burger:hover {
     border: 0; }
     .button-collapse--burger:hover i {
-      color: #F5F5F5; }
+      color: #e3dede; }
   .button-collapse--burger i {
     color: #fff;
     font-size: 40px;
@@ -9363,9 +9362,9 @@ body {
 .popup-content {
   position: relative;
   display: block;
-  background: #F5F5F5; }
+  background: #e3dede; }
   .popup-content:hover {
-    background: #F5F5F5 !important;
+    background: #e3dede !important;
     cursor: auto !important; }
   .popup-content::after {
     content: '';
@@ -9423,7 +9422,7 @@ body {
     font-size: 15px;
     margin: 10px 0 0 0;
     width: 100%;
-    color: darkgray; }
+    color: #9d8b8b; }
   .popup-content .popup__member-position {
     font-size: 15px;
     width: 100%; }
@@ -9589,7 +9588,7 @@ body {
     border: none; }
 
 .table--students {
-  border: 1px solid #F5F5F5; }
+  border: 1px solid #e3dede; }
   .table--students thead {
     background: #1565C0; }
     .table--students thead tr th {
@@ -9628,7 +9627,7 @@ body {
   width: 15px;
   -webkit-border-radius: 100%;
           border-radius: 100%;
-  background: #616161;
+  background: #e3dede;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9692,7 +9691,7 @@ body {
   margin-top: 30px; }
 
 .login__wrapper {
-  background: #F5F5F5; }
+  background: #e3dede; }
 
 .login-form {
   -webkit-box-align: center;
@@ -9721,7 +9720,7 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #F5F5F5;
+  background: #e3dede;
   display: -ms-flex;
   display: -webkit-flex;
   display: -webkit-box;
