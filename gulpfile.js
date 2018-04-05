@@ -62,7 +62,7 @@ gulp.task('gulp-group-css-media-queries', function () {
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/js/materialize.min.js',
+		// 'app/js/materialize.min.js',
 		'app/js/wow.js',
 		'app/js/owl.carousel.min.js',
 		'app/js/jquery.maskedinput.min.js',

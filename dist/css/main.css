@@ -4571,6 +4571,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
   margin-bottom: 50px;
 }
 
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: #1565C0;
+}
+
 .btn,
 .btn-large {
   background: #2296F3;
@@ -5817,7 +5822,7 @@ body textarea:focus:required:invalid:required:valid {
 @media screen and (max-width: 560px) {
   .dropdown-content--account-popup {
     width: 100% !important;
-    left: 0;
+    left: 0 !important;
   }
 
   .table {
