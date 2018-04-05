@@ -12108,7 +12108,6 @@ a {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  border-bottom: 1px solid transparent;
 }
 
 a:hover {
@@ -12116,7 +12115,6 @@ a:hover {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  border-bottom: 1px dotted #2296F3;
 }
 
 .btn,
@@ -12737,6 +12735,28 @@ body textarea:focus:required:invalid:required:valid {
   background: #1871d7;
 }
 
+.menu-settings-wrapper {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.dropdown-settings {
+  width: 80%;
+  background: #1565C0;
+}
+
 .switch label input[type=checkbox]:checked + .lever {
   background-color: #b6da96;
 }
@@ -12804,15 +12824,15 @@ body textarea:focus:required:invalid:required:valid {
   border: none;
 }
 
-.table {
+.table--students {
   border: 1px solid #F5F5F5;
 }
 
-.table thead {
+.table--students thead {
   background: #1565C0;
 }
 
-.table thead tr th {
+.table--students thead tr th {
   color: #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -12820,24 +12840,24 @@ body textarea:focus:required:invalid:required:valid {
   text-align: center;
 }
 
-.table thead tr th a {
+.table--students thead tr th a {
   color: #fff;
   border: none;
 }
 
-.table thead tr th:hover {
+.table--students thead tr th:hover {
   border: none;
 }
 
-.table thead tr th svg {
+.table--students thead tr th svg {
   margin: 0 10px;
 }
 
-.table thead tr th:first-child {
+.table--students thead tr th:first-child {
   width: 50px;
 }
 
-.table thead tr th:first-child svg {
+.table--students thead tr th:first-child svg {
   margin: 0;
   position: absolute;
   left: 50%;
@@ -12847,16 +12867,16 @@ body textarea:focus:required:invalid:required:valid {
   transform: translate(-50%, -50%);
 }
 
-.table tbody tr td {
+.table--students tbody tr td {
   position: relative;
   text-align: center;
 }
 
-.table tbody tr td:first-child {
+.table--students tbody tr td:first-child {
   width: 50px;
 }
 
-.table tbody tr td.bad {
+.table--students tbody tr td.bad {
   color: red;
 }
 
@@ -12935,6 +12955,11 @@ body textarea:focus:required:invalid:required:valid {
 
 .indicators-wrapper .error.error--orange {
   color: orange;
+}
+
+.form {
+  width: 100%;
+  padding: 20px;
 }
 
 .login__a {
