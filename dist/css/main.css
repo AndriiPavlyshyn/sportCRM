@@ -12961,6 +12961,37 @@ body textarea:focus:required:invalid:required:valid {
   padding: 20px;
 }
 
+.filter__header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.filter__h4 {
+  margin: 0;
+  display: block;
+}
+
+.filter__a {
+  color: #1565C0;
+  text-transform: uppercase;
+  display: block;
+}
+
+.filter__a:hover {
+  color: #2296F3;
+}
+
+.filter__a--defaults {
+  margin: 0 30px;
+}
+
 .login__a {
   margin-top: 30px;
 }
@@ -12990,6 +13021,10 @@ body textarea:focus:required:invalid:required:valid {
   justify-content: center;
   max-width: 560px;
   width: 100%;
+}
+
+.container--students {
+  position: relative;
 }
 
 .container--login {
@@ -13270,6 +13305,13 @@ body textarea:focus:required:invalid:required:valid {
 @media only screen and (min-width: 1200px) {
   html {
     font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .popup-content::after {
+    content: '';
+    right: 365px;
   }
 }
 

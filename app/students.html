@@ -4,7 +4,7 @@
 
 @@include('./_parts/_header.html')
 
-<div class="container">
+<div class="container container--students">
 	<div class="table-settings">
 		<div class="table__title-wrapper">
 			<h2 class="table-title">Ученики</h2>
@@ -145,6 +145,7 @@
 		</table>
 		</div>
 	</div>
+</div>
 
 
 	<div class="fixed-action-btn">
@@ -176,6 +177,20 @@
 	</div>
 
 	@@include('./_parts/_dropdowns-popups/_students-page-dropdown.html')
-	@@include('./_parts/_filters/_students-filter.html')
+	<!-- @@include('./_parts/_filters/_students-filter.html') -->
+
+	<ul id='dropdown2' class='dropdown-content dropdown-content--account-popup z-depth-2'>
+		<li class="popup-content">
+			<div class="filter-wrapper">
+				<div class="filter__header">
+					<a href="#" class="filter__a">
+						<i class="material-icons">arrow_back</i>
+					</a>
+					<h4 class="filter__h4">Фильтр</h4>
+					<a href="#" class="filter__a filter__a--defaults">сбросить все</a>
+				</div>
+			</div>
+		</li>
+	</ul>
 
 	@@include('./_parts/_scripts.html')
