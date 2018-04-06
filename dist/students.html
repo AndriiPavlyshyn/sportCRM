@@ -34,32 +34,35 @@
 <!-- Custom HTML -->
 
 <header class="header header--login">
-	<div class="button-collapse-wrapper">
-		<a href="#" data-target="slide-out" class="sidenav-trigger button-collapse button-collapse--burger">
-			<i class="large material-icons">menu</i>
-		</a>
-	</div>
-	<div class="header__logo">
-		<a href="#" class="logo__a">
-			<h1 class="logo__h1">sportCRM</h1>
-		</a>
-	</div>
-	<div class="search-wrapper mobile-none">
-		<input name="search" id="search" class="search" placeholder="Искать...">
-		<label class="search__label" for="search">
-			<i class="material-icons">search</i>
-		</label>
-		<div class="search-results"></div>
-	</div>
-	<div class="account-logo-wrapper">
-		<a data-target='dropdown1' href="#" class="dropdown-trigger account-logo__a">
-			<i class="large material-icons">account_circle</i>
-		</a>
-	</div>
+	<nav>
+		<div class="nav-wrapper">
+			<div class="button-collapse-wrapper">
+				<a href="#" data-target="slide-out" class="sidenav-trigger button-collapse button-collapse--burger">
+					<i class="large material-icons">menu</i>
+				</a>
+			</div>
+			<div class="header__logo">
+				<a href="#" class="brand-logo logo__a">
+					<h1 class="logo__h1">sportCRM</h1>
+				</a>
+			</div>
+			<div class="search-wrapper mobile-none">
+				<input name="search" id="search" class="search" placeholder="Искать...">
+				<label class="search__label" for="search">
+					<i class="material-icons">search</i>
+				</label>
+				<div class="search-results"></div>
+			</div>
+			<div class="account-logo-wrapper">
+				<a data-target='dropdown1' href="#" class="dropdown-trigger account-logo__a">
+					<i class="large material-icons">account_circle</i>
+				</a>
+			</div>
+		</div>
+	</nav>
 </header>
 
 <!-- Sidebar navigation -->
-
 <div id="slide-out" class="sidenav">
 	<div class="menu__wrapper">
 		<ul class="navigation">
@@ -133,7 +136,7 @@
 				</div>
 			</div>
 			<div class="sort-button">
-				<a class="dropdown-trigger" data-target='dropdown2' href="#">
+				<a class="filter-trigger" data-target='dropdown2' href="#">
 					<i class="large material-icons">filter_list</i>
 				</a>
 			</div>
@@ -479,7 +482,7 @@
 				<div class="form--filter__body">
 					<div class="filter__balance-inputs-wrapper">
 						<div class="input-field">
-							<select>
+							<select class="filter-select">
 								<option value="1">Больше</option>
 								<option value="2">Меньше</option>
 							</select>
@@ -511,7 +514,7 @@
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 

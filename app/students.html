@@ -2,7 +2,9 @@
 
 <!-- Custom HTML -->
 
-@@include('./_parts/_header.html')
+@@include('./_parts/_header.html', {
+	"login": true
+})
 
 <div class="container container--students">
 	<div class="table-settings">
@@ -19,7 +21,7 @@
 				</div>
 			</div>
 			<div class="sort-button">
-				<a class="dropdown-trigger" data-target='dropdown2' href="#">
+				<a class="filter-trigger" data-target='dropdown2' href="#">
 					<i class="large material-icons">filter_list</i>
 				</a>
 			</div>
@@ -321,7 +323,7 @@
 				<div class="form--filter__body">
 					<div class="filter__balance-inputs-wrapper">
 						<div class="input-field">
-							<select>
+							<select class="filter-select">
 								<option value="1">Больше</option>
 								<option value="2">Меньше</option>
 							</select>

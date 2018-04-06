@@ -4498,6 +4498,10 @@ th {
 
 /* Components */
 
+nav {
+  background: #1565C0;
+}
+
 h1,
 h2,
 h3,
@@ -4514,6 +4518,11 @@ a {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+}
+
+a:focus,
+a:active {
+  outline: none;
 }
 
 a:hover {
@@ -4569,14 +4578,15 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .dropdown-content {
   max-height: 100000px !important;
   margin-bottom: 50px;
-  -webkit-transform: none !important;
-  -ms-transform: none !important;
-  transform: none !important;
 }
 
 .dropdown-content li > a,
 .dropdown-content li > span {
   color: #1565C0;
+}
+
+.select-wrapper input.select-dropdown:focus {
+  border-color: #1565C0;
 }
 
 .btn,
@@ -4739,24 +4749,6 @@ body textarea:focus:required:invalid:required:valid {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.header {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: #1565C0;
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100px;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  width: 100%;
 }
 
 .header--login {
@@ -4989,6 +4981,10 @@ body textarea:focus:required:invalid:required:valid {
 
 #sidenav-overlay {
   z-index: 998;
+}
+
+nav a.sidenav-trigger {
+  display: block;
 }
 
 .navigation {
