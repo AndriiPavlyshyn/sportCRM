@@ -1,12 +1,19 @@
 jQuery(document).ready(function() {
 
-	// Sidenav init
-	$('.button-collapse').sidenav({
-		menuWidth: 300, // Default is 300
-		edge: 'left', // Choose the horizontal origin
-		closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-		draggable: true, // Choose whether you can drag to open on touch screens,
-		onOpen: function(el) {}
+	// Sidenav
+
+	$('.sidenav').sidenav();
+
+	// Dropdown
+
+	$('.dropdown-trigger').dropdown();
+
+	// Datepicker
+
+	$('.datepicker').datepicker();
+
+	$('.dropdown-trigger + .dropdown-content').on('click', function(event) {
+		event.stopPropagation();
 	});
 
 	// Datapicker init
@@ -24,23 +31,11 @@ jQuery(document).ready(function() {
 	// 	weekdaysShort: ['Вс', 'Пон', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб']
 	// });
 
-	$('.dropdown-button + .dropdown-content').on('click', function(event) {
-		event.stopPropagation();
-	});
+
 
 
 	// Select
 
 	$('select').formSelect();
-
-	/* Wow */
-
-	new WOW().init();
-
-	/* Phone input mask */
-
-	$(".phone").mask("+380 999 999 999");
-
-	// Fixed plus button init
 
 });
