@@ -4569,6 +4569,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .dropdown-content {
   max-height: 100000px !important;
   margin-bottom: 50px;
+  -webkit-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important;
 }
 
 .dropdown-content li > a,
