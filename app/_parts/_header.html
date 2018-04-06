@@ -1,3 +1,4 @@
+
 <header class="header header--login">
 	<nav>
 		<div class="nav-wrapper">
@@ -28,11 +29,20 @@
 					<i class="material-icons">close</i>
 				</div>
 			</form>
+			@@if (login === true) {
 			<div class="account-logo-wrapper">
 				<a data-target='dropdown1' href="#" class="dropdown-trigger account-logo__a">
 					<i class="large material-icons">account_circle</i>
 				</a>
 			</div>
+			}
+			@@if (exit === true) {
+			<div class="account-logo-wrapper">
+				<a href="#" class="dropdown-trigger account-logo__a">
+					<i class="large material-icons">exit_to_app</i>
+				</a>
+			</div>
+			}
 		</div>
 	</nav>
 </header>

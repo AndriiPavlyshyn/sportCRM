@@ -3280,6 +3280,10 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   -webkit-box-shadow: none;
           box-shadow: none; }
 
+.sidenav,
+.sidenav-overlay {
+  top: 64px; }
+
 .btn,
 .btn-large {
   background: #2296F3; }
