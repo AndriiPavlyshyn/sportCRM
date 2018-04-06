@@ -3,11 +3,19 @@
 nav
   background: $blue
 
+form
+  display: block
+  float: left
+
 h1,
 h2,
 h3,
-h4
+h4,
+h5
   font-weight: 300
+
+h1
+  font-size: $h1
 
 h2
   font-size: $h2
@@ -39,8 +47,8 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   border-bottom: 2px solid $blue
 
 .dropdown-content
-  max-height: 100000px !important
   margin-bottom: 50px
+  height: auto !important
 
 .dropdown-content li>a,
 .dropdown-content li>span
@@ -48,3 +56,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 
 .select-wrapper input.select-dropdown:focus
   border-color: $blue
+
+input[type=search]:not(.browser-default):focus:not([readonly])
+  border: none
+  box-shadow: none
