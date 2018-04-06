@@ -1,0 +1,133 @@
+@@include('./_parts/_head.html', { "pagetitle": "Страница учеников", "bodyclass": "" })
+
+<!-- Custom HTML -->
+
+@@include('./_parts/_header.html', {
+	"login": true
+})
+
+<div class="container container--students">
+	<div class="table-settings table-settings--year">
+		<div class="table__title-wrapper">
+			<h5 class="table-title">Касса за год, 49 876 грн.</h5>
+		</div>
+    <div class="datepicker__wrapper">
+      <div class="input-field input-field--filter">
+        <input placeholder="Выберите дату" type="text" class="datepicker">
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+    </div>
+	</div>
+	<div class="table-wrapper">
+		<table class="table striped table--trenings">
+			<thead>
+				<tr>
+					<th>
+						<a href="#">
+							<i class="fas fa-caret-down"></i>Дата
+						</a>
+					</th>
+					<th>
+						<a href="#">
+							<i class="fas fa-caret-down"></i>Операции</a>
+					</th>
+					<th>
+						<a href="#">
+							<i class="fas fa-caret-down"></i>Ученик</a>
+					</th>
+					<th>
+						<a href="#">
+							<i class="fas fa-caret-down"></i>Сумма</a>
+					</th>
+					<th>
+						<a href="#">
+							<i class="fas fa-caret-down"></i>Исполнитель</a>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>19.02.2018</td>
+					<td>Оплата</td>
+					<td>Иван Иванов</td>
+					<td>1000</td>
+					<td>Любовь Троянова</td>
+				</tr>
+        <tr>
+          <td>19.02.2018</td>
+          <td>Оплата</td>
+          <td>Иван Иванов</td>
+          <td>300</td>
+          <td>Любовь Троянова</td>
+        </tr>
+        <tr>
+          <td>19.02.2018</td>
+          <td>Оплата</td>
+          <td>Иван Иванов</td>
+          <td>500</td>
+          <td>Любовь Троянова</td>
+        </tr>
+        <tr>
+          <td>19.02.2018</td>
+          <td>Оплата</td>
+          <td>Иван Иванов</td>
+          <td>400</td>
+          <td>Любовь Троянова</td>
+        </tr>
+        <tr>
+          <td>19.02.2018</td>
+          <td>Оплата</td>
+          <td>Иван Иванов</td>
+          <td>300</td>
+          <td>Любовь Троянова</td>
+        </tr>
+        <tr>
+          <td>19.02.2018</td>
+          <td>Оплата</td>
+          <td>Иван Иванов</td>
+          <td>300</td>
+          <td>Любовь Троянова</td>
+        </tr>
+        <tr>
+          <td>19.02.2018</td>
+          <td>Оплата</td>
+          <td>Иван Иванов</td>
+          <td>100</td>
+          <td>Любовь Троянова</td>
+        </tr>
+			</tbody>
+		</table>
+		</div>
+	</div>
+</div>
+<div class="fixed-action-btn">
+	<a class="btn-floating btn-large btn--plus">
+		<i class="large material-icons">add</i>
+	</a>
+	<ul>
+		<li>
+			<a class="btn-floating red">
+				<i class="material-icons">insert_chart</i>
+			</a>
+		</li>
+		<li>
+			<a class="btn-floating yellow darken-1">
+				<i class="material-icons">format_quote</i>
+			</a>
+		</li>
+		<li>
+			<a class="btn-floating green">
+				<i class="material-icons">publish</i>
+			</a>
+		</li>
+		<li>
+			<a class="btn-floating blue">
+				<i class="material-icons">attach_file</i>
+			</a>
+		</li>
+	</ul>
+</div>
+
+@@include('./_parts/_dropdowns-popups/_students-page-dropdown.html')
+
+@@include('./_parts/_scripts.html')

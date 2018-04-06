@@ -12,13 +12,6 @@
 					<h1 class="logo__h1">sportCRM</h1>
 				</a>
 			</div>
-			<!-- <div class="search-wrapper mobile-none">
-				<input name="search" id="search" class="search" placeholder="Искать...">
-				<label class="search__label" for="search">
-					<i class="material-icons">search</i>
-				</label>
-				<div class="search-results"></div>
-			</div> -->
 
 			<form class="header-search">
 				<div class="input-field">
@@ -36,13 +29,6 @@
 				</a>
 			</div>
 			}
-			@@if (exit === true) {
-			<div class="account-logo-wrapper">
-				<a href="#" class="dropdown-trigger account-logo__a">
-					<i class="large material-icons">exit_to_app</i>
-				</a>
-			</div>
-			}
 		</div>
 	</nav>
 </header>
@@ -50,6 +36,14 @@
 <!-- Sidebar navigation -->
 <div id="slide-out" class="sidenav">
 	<div class="menu__wrapper">
+		<div class="filter__header">
+				<div class="filter__title">
+					<a href="#" class="filter__a">
+						<i class="material-icons">arrow_back</i>
+					</a>
+					<h5 class="filter__h4">Меню</h5>
+				</div>
+			</div>
 		<ul class="navigation">
 			<div class="search-wrapper search-wrapper--mobile mobile-block">
 				<input name="search" id="search" class="search" placeholder="Искать...">
