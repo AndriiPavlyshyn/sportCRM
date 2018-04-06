@@ -128,12 +128,12 @@ var settings = {
 smartgrid('./app/sass', settings);
 
 gulp.task('watch', ['fileinclude', 'styles', 'gulp-group-css-media-queries', 'js', 'copyimg', 'browser-sync'], function() {
-	gulp.watch('app/*html', ['fileinclude']);
+	gulp.watch('app/**/*.html', ['fileinclude']);
 	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
 	gulp.watch('app/css/**/*', ['gulp-group-css-media-queries']);
 	gulp.watch('app/js/common.js', ['js']);
 	gulp.watch('app/img', ['copyimg']);
-	gulp.watch('dist/*.html', browsersync.reload)
+	gulp.watch('app/**/*.html', browsersync.reload)
 });
 
 gulp.task('default', ['watch']);

@@ -3253,10 +3253,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 
 .dropdown-content {
   max-height: 100000px !important;
-  margin-bottom: 50px;
-  -webkit-transform: none !important;
-      -ms-transform: none !important;
-          transform: none !important; }
+  margin-bottom: 50px; }
 
 .dropdown-content li > a,
 .dropdown-content li > span {
