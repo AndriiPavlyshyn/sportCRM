@@ -135,108 +135,62 @@
 </div>
 
 
-<div class="container container--students">
-	<div class="table-settings">
-		<div class="table__title-wrapper">
-			<h5 class="table-title">Тренировки, 58</h5>
+<div class="container">
+	<div class="settings-title__wrapper">
+		<div class="table-settings">
+			<h5 class="table-title">Общие настройки</h5>
 		</div>
-		<div class="settings-wrapper">
-			<div class="sort-button">
-				<a class="filter-trigger" data-target='dropdown2' href="#">
-					<i class="large material-icons">filter_list</i>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="table-wrapper">
-		<table class="table striped table--trenings">
-			<thead>
-				<tr>
-					<th>
-						<a href="#">
-							<i class="fas fa-caret-down"></i>Дата
-						</a>
-					</th>
-					<th>
-						<a href="#">
-							<i class="fas fa-caret-down"></i>Ученик</a>
-					</th>
-					<th>
-						<a href="#">
-							<i class="fas fa-caret-down"></i>Группа</a>
-					</th>
-					<th>
-						<a href="#">
-							<i class="fas fa-caret-down"></i>Тренер</a>
-					</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>19.02.2018</td>
-					<td>Корзников Николай</td>
-					<td>6/67</td>
-					<td>Маким Шилин</td>
-				</tr>
-				<tr>
-          <td>19.02.2018</td>
-					<td>Никоненко Яков</td>
-					<td>6/67</td>
-					<td>Любовь Троянова</td>
-				</tr>
-				<tr>
-          <td>19.02.2018</td>
-					<td>Мизера Вадим</td>
-					<td>6/67</td>
-					<td>Любовь Троянова</td>
-				</tr>
-				<tr>
-          <td>19.02.2018</td>
-					<td>Гринько Никита</td>
-					<td>6/67</td>
-					<td>Любовь Троянова</td>
-				</tr>
-				<tr>
-          <td>19.02.2018</td>
-					<td>Костогрыз Елисей</td>
-					<td>6/67</td>
-					<td>Маким Шилин</td>
-				</tr>
-			</tbody>
-		</table>
-		</div>
+		<ul class="settings-list">
+			<li>
+				<p>Краткое обозначение валюты(грн, руб, USD)</p>
+				<input placeholder="грн" type="text">
+			</li>
+			<li>
+				<p>Через сколько дней после отсутствия ученика ставить статус "Не активен"</p>
+				<input placeholder="30" type="text">
+			</li>
+			<li>
+				<p>Сколько дней после регистрации ученика разрешать редактировать "Старый баланс"</p>
+				<input placeholder="7" type="text">
+			</li>
+			<li>
+				<p>Какой период в днях показывать в Операциях исполнителям</p>
+        <input placeholder="60" type="text">
+			</li>
+			<li>
+				<p>Показывать исполнителям только их оплаты?</p>
+        <div class="input-field">
+          <select class="filter-select">
+            <option value="1">Да</option>
+            <option value="2">Нет</option>
+          </select>
+        </div>
+			</li>
+			<li>
+				<p>Показывать исполнителям только их оплаты?</p>
+        <div class="input-field">
+          <select>
+            <option value="1">Да</option>
+            <option value="2">Нет</option>
+          </select>
+        </div>
+			</li>
+		</ul>
 	</div>
 </div>
-
-<div class="fixed-action-btn">
+<div class="fixed-action-btn fixed-action-btn--students">
 	<a class="btn-floating btn-large btn--plus">
-		<i class="large material-icons">add</i>
+		<i class="large material-icons">people</i>
 	</a>
 	<ul>
 		<li>
-			<a class="btn-floating red">
-				<i class="material-icons">insert_chart</i>
-			</a>
-		</li>
-		<li>
-			<a class="btn-floating yellow darken-1">
-				<i class="material-icons">format_quote</i>
-			</a>
-		</li>
-		<li>
-			<a class="btn-floating green">
-				<i class="material-icons">publish</i>
-			</a>
-		</li>
-		<li>
-			<a class="btn-floating blue">
-				<i class="material-icons">attach_file</i>
+			<a class="btn-floating orange">
+				<i class="material-icons">add</i>
 			</a>
 		</li>
 	</ul>
 </div>
-
-<ul id='dropdown1' class='dropdown-content dropdown-content--account-popup z-depth-2'>
+ <ul id='dropdown1' class='dropdown-content dropdown-content--account-popup z-depth-2'>
 	<li class="popup-content">
 		<div class="popup__name">
 			<div class="member__wrapper">
@@ -280,99 +234,7 @@
 		</div>
 	</li>
 </ul>
-
-<ul id='dropdown2' class='dropdown-content dropdown-content--account-popup z-depth-2'>
-	<li class="popup-content">
-		<div class="filter-wrapper">
-			<div class="filter__header">
-				<div class="filter__title">
-					<a href="#" class="filter__a">
-						<i class="material-icons">arrow_back</i>
-					</a>
-					<h4 class="filter__h4">Фильтр</h4>
-				</div>
-				<a href="#" class="filter__a filter__a--defaults">сбросить все</a>
-			</div>
-			<form action="#" class="form form--filter">
-				<div class="form--filter__header">
-					<p class="filter__p">Дата</p>
-					<a href="#" class="filter__a filter__a--defaults">сбросить</a>
-				</div>
-				<div class="form--filter__body">
-					<div class="filter__input-wrapper">
-						<div class="filter__p--time-wrapper">
-							<p class="filter__p filter__p--time">с</p>
-						</div>
-						<div class="input-field input-field--filter">
-							<input placeholder="Выберите дату" type="text" class="datepicker datepicker--filter">
-							<i class="fas fa-calendar-alt"></i>
-						</div>
-					</div>
-					<div class="filter__input-wrapper">
-						<div class="filter__p--time-wrapper">
-							<p class="filter__p filter__p--time">до</p>
-						</div>
-						<div class="input-field input-field--filter">
-							<input placeholder="Выберите дату" type="text" class="datepicker datepicker--filter">
-							<i class="fas fa-calendar-alt"></i>
-						</div>
-					</div>
-				</div>
-				<div class="form--filter__header">
-					<p class="filter__p">Группы</p>
-					<a href="#" class="filter__a filter__a--defaults">сбросить</a>
-				</div>
-				<div class="form--filter__body">
-					<div class="filter-checkbox__wrapper">
-						<label>
-							<input type="checkbox" />
-							<span>1/67</span>
-						</label>
-					</div>
-					<div class="filter-checkbox__wrapper">
-						<label>
-							<input type="checkbox" />
-							<span>2/67</span>
-						</label>
-					</div>
-					<div class="filter-checkbox__wrapper">
-						<label>
-							<input type="checkbox" />
-							<span>3/67</span>
-						</label>
-					</div>
-				</div>
-				<div class="form--filter__header">
-					<p class="filter__p">Тренер</p>
-					<a href="#" class="filter__a filter__a--defaults">сбросить</a>
-				</div>
-				<div class="form--filter__body">
-					<div class="filter-checkbox__wrapper">
-						<label>
-							<input type="checkbox" />
-							<span>Максим Шилин</span>
-						</label>
-					</div>
-					<div class="filter-checkbox__wrapper">
-						<label>
-							<input type="checkbox" />
-							<span>Любовь Троянова</span>
-						</label>
-					</div>
-					<div class="filter-checkbox__wrapper">
-						<label>
-							<input type="checkbox" />
-							<span>Алексей Прищепа</span>
-						</label>
-					</div>
-				</div>
-			</form>
-		</div>
-	</li>
-</ul>
-
-
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+ <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

@@ -1,0 +1,50 @@
+@@include('./_parts/_head.html', { "pagetitle": "Страница учеников", "bodyclass": "" })
+
+<!-- Custom HTML -->
+
+@@include('./_parts/_header.html', { "login": true })
+
+<div class="container">
+	<div class="settings-title__wrapper">
+		<div class="table-settings">
+			<h5 class="table-title">Общие настройки</h5>
+		</div>
+		<ul class="settings-list">
+			<li>
+				<p>Краткое обозначение валюты(грн, руб, USD)</p>
+				<input placeholder="грн" type="text">
+			</li>
+			<li>
+				<p>Через сколько дней после отсутствия ученика ставить статус "Не активен"</p>
+				<input placeholder="30" type="text">
+			</li>
+			<li>
+				<p>Сколько дней после регистрации ученика разрешать редактировать "Старый баланс"</p>
+				<input placeholder="7" type="text">
+			</li>
+			<li>
+				<p>Какой период в днях показывать в Операциях исполнителям</p>
+        <input placeholder="60" type="text">
+			</li>
+			<li>
+				<p>Показывать исполнителям только их оплаты?</p>
+        <div class="input-field">
+          <select class="filter-select">
+            <option value="1">Да</option>
+            <option value="2">Нет</option>
+          </select>
+        </div>
+			</li>
+			<li>
+				<p>Показывать исполнителям только их оплаты?</p>
+        <div class="input-field">
+          <select>
+            <option value="1">Да</option>
+            <option value="2">Нет</option>
+          </select>
+        </div>
+			</li>
+		</ul>
+	</div>
+</div>
+@@include('./_parts/_fixed-buttons/_fixed-plus-button-students.html') @@include('./_parts/_dropdowns-popups/_member-dropdown.html') @@include('./_parts/_scripts.html')

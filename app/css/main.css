@@ -4213,6 +4213,30 @@ nav a.sidenav-trigger {
 .table-wrapper {
   margin-bottom: 50px; }
 
+.month-next:focus,
+.month-prev:focus {
+  background: transparent !important; }
+
+.table.bordered {
+  border-color: #616161; }
+  .table.bordered tr td {
+    border: 1px solid #e3dede !important; }
+
+.table__title-wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .mobile-none {
   display: -webkit-flex;
   display: -ms-flex;
@@ -4256,7 +4280,7 @@ nav a.sidenav-trigger {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 30%; }
+    width: 20%; }
   .search-wrapper {
     width: 40%; }
   .account-logo-wrapper,
@@ -4277,11 +4301,15 @@ nav a.sidenav-trigger {
     display: -ms-flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex; } }
+
+@media screen and (max-width: 780px) {
   .search-wrapper--mobile {
     width: 100%; }
   .header__logo {
-    width: 70%; } }
+    width: 70%; }
+  .table-settings {
+    width: 100%; } }
 
 @media screen and (max-width: 560px) {
   .dropdown-content--account-popup {

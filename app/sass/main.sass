@@ -115,6 +115,25 @@ body
 .table-wrapper
 	margin-bottom: 50px
 
+.month-next,
+.month-prev
+	&:focus
+		background: transparent !important
+
+.table.bordered
+	border-color: $grey
+
+	tr
+		td
+			border: 1px solid $light-grey !important
+
+.table__title-wrapper
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	align-items: center
+	justify-content: center
+
 // Always at the end
 
 .mobile-none
