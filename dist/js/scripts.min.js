@@ -6,11 +6,22 @@ jQuery(document).ready(function() {
 
 	// Dropdown
 
-	$('.dropdown-trigger').dropdown();
+	$('.dropdown-trigger').dropdown({
+		closeOnClick: false
+	});
 
 	// Datepicker
 
 	$('.datepicker').datepicker();
+
+	// Fixed action btn
+
+	$('.fixed-action-btn').floatingActionButton();
+
+	// Select
+
+	$('select').formSelect();
+
 
 	$('.dropdown-trigger + .dropdown-content').on('click', function(event) {
 		event.stopPropagation();
@@ -30,12 +41,5 @@ jQuery(document).ready(function() {
 	// 	weekdays: ['Воскресенье', 'Понидельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
 	// 	weekdaysShort: ['Вс', 'Пон', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб']
 	// });
-
-
-
-
-	// Select
-
-	$('select').formSelect();
 
 });
