@@ -1,0 +1,68 @@
+@@include('./_parts/_head.html', { "pagetitle": "Страница учеников", "bodyclass": "" })
+
+<!-- Custom HTML -->
+
+@@include('./_parts/_header.html', { "login": true })
+
+<div class="container container--students">
+	<div class="table-settings">
+		<div class="table__title-wrapper">
+			<h5 class="table-title">Настройки пользователей</h5>
+		</div>
+	</div>
+	<div class="table-wrapper">
+		<table class="table striped table--trenings">
+			<thead>
+				<tr>
+					<th>
+						<a href="#">Акт.</a>
+					</th>
+					<th>
+						<a href="#">Пользователь</a>
+					</th>
+					<th>
+						<a href="#">Email</a>
+					</th>
+					<th>
+						<a href="#">Групы</a>
+					</th>
+					<th>
+						<a href="#"></i>Модули</a>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<div class="green-signal active"></div>
+					</td>
+					<td>Максим Шилин</td>
+					<td>max@gmail.com</td>
+					<td>все</td>
+					<td>все</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="green-signal"></div>
+					</td>
+					<td>Максим Шилин</td>
+					<td>max@gmail.com</td>
+					<td>некоторые</td>
+					<td>все</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="green-signal active"></div>
+					</td>
+					<td>Максим Шилин</td>
+					<td>max@gmail.com</td>
+					<td>все</td>
+					<td>некоторые</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</div>
+@@include('./_parts/_dropdowns-popups/_member-dropdown.html')
+@@include('./_parts/_fixed-buttons/_fixed-plus-button.html') @@include('./_parts/_scripts.html')

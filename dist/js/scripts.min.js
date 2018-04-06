@@ -67,7 +67,7 @@ window.App = {
 				coverTrigger: false,
 			}
 		};
-		var select_elem = document.querySelector('.filter-select');
+		var select_elem = $('.filter-select');
 		App.storage.select = M.FormSelect.init(select_elem, select_opt);
 		$('.dropdown-content .select-wrapper input.select-dropdown').removeClass('dropdown-trigger');
 

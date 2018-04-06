@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>CRM - Страница учеников</title>
+		<meta name="description" content="">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Template Basic Images Start -->
+		<meta property="og:image" content="path/to/image.jpg">
+		<link rel="icon" href="img/favicon/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+		<!-- Template Basic Images End -->
+
+		<!-- Custom Browsers Color Start -->
+		<meta name="theme-color" content="#000">
+		<!-- Custom Browsers Color End -->
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+
+	</head>
+
+	<body class=>
+
+
+<!-- Custom HTML -->
+
+
+<header class="header header--login">
+	<nav>
+		<div class="nav-wrapper">
+			<div class="button-collapse-wrapper">
+				<a href="#" data-target="slide-out" class="sidenav-trigger button-collapse button-collapse--burger">
+					<i class="large material-icons">menu</i>
+				</a>
+			</div>
+			<div class="header__logo">
+				<a href="#" class="brand-logo logo__a">
+					<h1 class="logo__h1">sportCRM</h1>
+				</a>
+			</div>
+
+			<form class="header-search">
+				<div class="input-field">
+					<input id="search" type="search" required>
+					<label class="label-icon" for="search">
+						<i class="material-icons">search</i>
+					</label>
+					<i class="material-icons">close</i>
+				</div>
+			</form>
+			
+			<div class="account-logo-wrapper">
+				<a data-target='dropdown1' href="#" class="dropdown-trigger account-logo__a">
+					<i class="large material-icons">account_circle</i>
+				</a>
+			</div>
+			
+		</div>
+	</nav>
+</header>
+
+<!-- Sidebar navigation -->
+<div id="slide-out" class="sidenav">
+	<div class="menu__wrapper">
+		<div class="filter__header">
+				<div class="filter__title">
+					<a href="#" class="filter__a">
+						<i class="material-icons">arrow_back</i>
+					</a>
+					<h5 class="filter__h4">Меню</h5>
+				</div>
+			</div>
+		<ul class="navigation">
+			<div class="search-wrapper search-wrapper--mobile mobile-block">
+				<input name="search" id="search" class="search" placeholder="Искать...">
+				<label class="search__label" for="search">
+					<i class="material-icons">search</i>
+				</label>
+				<div class="search-results"></div>
+			</div>
+			<li>
+				<a href="#">
+					<i class="fas fa-home"></i>Главная</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="far fa-futbol"></i>Тренировки</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fas fa-folder-open"></i>Операции</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fas fa-star"></i>Extra</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fas fa-money-bill-alt"></i>Касса</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="far fa-money-bill-alt"></i>Касса за год</a>
+			</li>
+		</ul>
+		<div class="menu-settings-wrapper">
+			<div class='dropdown-trigger btn dropdown-settings' href='#' data-target='dropdown-settings-menu'>Настройки</div>
+		</div>
+
+		<!-- Dropdown Structure -->
+		<ul id='dropdown-settings-menu' class='dropdown-content dropdown-menu__settings-list'>
+			<li>
+				<a href="#!">Основные</a>
+			</li>
+			<li>
+				<a href="#!">Группы</a>
+			</li>
+			<li>
+				<a href="#!">Пользователи</a>
+			</li>
+			<li>
+				<a href="#!">Extra</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<div class="container container--students">
+	<div class="table-settings">
+		<div class="table__title-wrapper">
+			<h5 class="table-title">Настройки групп</h5>
+		</div>
+	</div>
+	<div class="table-wrapper">
+		<table class="table striped table--trenings">
+			<thead>
+				<tr>
+					<th>
+						<a href="#">
+							<i class="fas fa-caret-down"></i>Акт.
+						</a>
+					</th>
+					<th>
+						<a href="#">
+							<i class="fas fa-caret-down"></i>Група</a>
+					</th>
+					<th>
+						<a href="#">
+							<i class="fas fa-caret-down"></i>За тренировку</a>
+					</th>
+					<th>
+						<a href="#">
+							<i class="fas fa-caret-down"></i>За месяц</a>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<div class="green-signal active"></div>
+					</td>
+					<td>1/67</td>
+					<td>50грн</td>
+					<td>450грн</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="green-signal active"></div>
+					</td>
+					<td>1/67</td>
+					<td>50грн</td>
+					<td>450грн</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="green-signal"></div>
+					</td>
+					<td>1/67</td>
+					<td>50грн</td>
+					<td>450грн</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="green-signal active"></div>
+					</td>
+					<td>1/67</td>
+					<td>50грн</td>
+					<td>450грн</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</div>
+<ul id='dropdown1' class='dropdown-content dropdown-content--account-popup z-depth-2'>
+	<li class="popup-content">
+		<div class="popup__name">
+			<div class="member__wrapper">
+				<div class="popup__avatar">
+					<i class="large material-icons">account_circle</i>
+				</div>
+				<div class="popup__member-wrapper">
+					<h2 class="popup__member-name">Крыжановский Илларион</h2>
+					<h3 class="popup__member-mail">example@gmail.com</h3>
+					<h4 class="popup__member-position">Администратор</h4>
+				</div>
+			</div>
+			<div class="popup__groups">
+				<div class="groups__title-wrapper">
+					<h4 class="popup__member-position">Группы:</h4>
+				</div>
+				<div class="groups__ul-wrapper">
+					<ul class="groups__list">
+						<li>1/67</li>
+						<li>1/67</li>
+						<li>1/67</li>
+						<li>1/67</li>
+						<li>1/67</li>
+						<li>1/67</li>
+						<li>1/67</li>
+						<li>1/67</li>
+						<li>1/67</li>
+						<li>1/67</li>
+						<li>1/67</li>
+						<li>1/67</li>
+						<li>1/67</li>
+						<li>1/67</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /popup__groups -->
+			<div class="popup__logout">
+				<button class="btn pass__button">сменить пароль</button>
+				<button class="btn">выход</button>
+			</div>
+		</div>
+	</li>
+</ul>
+
+<div class="fixed-action-btn">
+	<a class="btn-floating btn-large btn--plus">
+		<i class="large material-icons">add</i>
+	</a>
+	<ul>
+		<li>
+			<a class="btn-floating red">
+				<i class="material-icons">insert_chart</i>
+			</a>
+		</li>
+		<li>
+			<a class="btn-floating yellow darken-1">
+				<i class="material-icons">format_quote</i>
+			</a>
+		</li>
+		<li>
+			<a class="btn-floating green">
+				<i class="material-icons">publish</i>
+			</a>
+		</li>
+		<li>
+			<a class="btn-floating blue">
+				<i class="material-icons">attach_file</i>
+			</a>
+		</li>
+	</ul>
+</div>
+ <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<script src="js/scripts.min.js"></script>
+

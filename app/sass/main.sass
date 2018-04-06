@@ -134,6 +134,56 @@ body
 	align-items: center
 	justify-content: center
 
+// Settings page
+
+.settings-list
+	width: 100%
+
+	li
+		width: 100%
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		justify-content: flex-start
+		align-items: center
+
+		input
+			max-width: 200px
+			margin-left: 50px !important
+
+.settings__link-wrapper
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	align-items: center
+	justify-content: center
+
+.settings-tables__wrapper
+	width: 80%
+
+.settings__link-wrapper--title
+	margin-left: 20px
+
+.settings__add-line
+	width: 100%
+	padding: 20px
+	border: 1px solid $light-grey
+	border-top: 0
+
+.table-wrapper--settings
+	margin: 0
+
+	&:last-child
+		margin-bottom: 50px
+
+// Extra settings page
+
+.material-icons--done
+	color: transparent
+
+.material-icons--done.active
+	color: $green
+
 // Always at the end
 
 .mobile-none
