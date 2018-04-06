@@ -5764,6 +5764,10 @@ nav a.sidenav-trigger {
   margin-top: 20px;
 }
 
+.table-wrapper {
+  margin-bottom: 50px;
+}
+
 .mobile-none {
   display: -webkit-flex;
   display: -ms-flex;
@@ -5863,10 +5867,6 @@ nav a.sidenav-trigger {
   .dropdown-content--account-popup {
     width: 100% !important;
     left: 0 !important;
-  }
-
-  .table {
-    margin-bottom: 50px;
   }
 
   .table-settings {

@@ -41,7 +41,9 @@ window.App = {
 				}
 			};
 			App.storage.datepicker = M.Datepicker.init(e.target, options);
-			App.storage.filter.close();
+			if (App.storage.filter !== null) {
+				App.storage.filter.close();
+			}
 			App.storage.datepicker.open();
 		});
 
