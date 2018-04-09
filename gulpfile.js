@@ -36,6 +36,7 @@ gulp.task('fileinclude', function() {
 			basepath: '@file'
 		}))
 	.pipe(gulp.dest('dist'))
+	.pipe(browsersync.reload( {stream: true} ))
 });
 
 gulp.task('copyimg', function () {

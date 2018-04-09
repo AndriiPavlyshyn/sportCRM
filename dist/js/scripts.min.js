@@ -9,6 +9,16 @@ window.App = {
 		select: null,
 	},
 	init: function() {
+		// Tabs
+
+		$('ul.tabs').tabs();
+
+		$('.carousel').carousel();
+
+		// Modal
+
+		$('.modal').modal();
+
 		// Sidenav
 
 		$('.sidenav').sidenav();

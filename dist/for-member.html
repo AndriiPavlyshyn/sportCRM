@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>CRM - Страницы</title>
+		<meta name="description" content="">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Template Basic Images Start -->
+		<meta property="og:image" content="path/to/image.jpg">
+		<link rel="icon" href="img/favicon/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+		<!-- Template Basic Images End -->
+
+		<!-- Custom Browsers Color Start -->
+		<meta name="theme-color" content="#000">
+		<!-- Custom Browsers Color End -->
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+
+	</head>
+
+	<body class=>
+
+
+<style>
+  .big-project-ul {
+    float: left;
+  }
+
+  .big-project-ul li {
+    margin: 15px 0;
+  }
+
+  .big-project-ul__a {
+    background: #e37b7c;
+    background-image: linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+    transition: 1s;
+  }
+
+  .big-project-ul__a:hover {
+    background: rgba(227, 123, 124, 0.77);
+    transition: 1s;
+  }
+
+  .big-project__logo {
+    width: 20%;
+  }
+
+  .big-project__logo img {
+    width: 100%;
+  }
+
+</style>
+
+<div class="container">
+  <ul class="big-project-ul showReveal-show showReveal">
+    <li>
+      <a href="#modal3" class="modal-trigger waves-effect waves-light btn-large big-project-ul__a">Модальное окно для оплаты клиента</a>
+    </li>
+    <li>
+      <a href="#modal4" class="modal-trigger waves-effect waves-light btn-large big-project-ul__a">Модальное окно для заказа клиента</a>
+    </li>
+    <li>
+      <a href="#modal5" class="modal-trigger waves-effect waves-light btn-large big-project-ul__a">[СТРАНИЦА СТУДЕНТОВ] Модальное окно для отметки присутсвия</a>
+    </li>
+  </ul>
+</div>
+<div id="modal3" class="modal modal--students modal--members">
+	<div class="modal-content modal-content--students">
+		<div class="modal__wrapper">
+			<div class="filter__header filter__header--modal">
+				<div class="filter__title">
+					<a href="#" class="filter__a">
+						<i class="material-icons">arrow_back</i>
+					</a>
+					<h5 class="filter__h4">Крыжановский Илларион</h5>
+				</div>
+			</div>
+			<div class="modal__content-wrapper">
+				<div class="modal__header-content">
+					<div class="modal__header-info">
+						<div class="modal__active-date">
+							<div class="green-signal active"></div>
+							<p class="modal__p">20.01.2018</p>
+						</div>
+						<div class="modal__price-wrapper">
+							<h5 class="modal__h5">
+								<strong>-400</strong> грн</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__content modal__content--member">
+			<!-- <h5 class="filter__h4 filter__h4--modal-h5">Внести оплату</h5> -->
+			<div class="input-field modal__balance modal__balance--member">
+				<p class="modal__p">
+					<i class="material-icons">add</i>
+				</p>
+				<input id="first_name" type="number" class="validate bad">
+				<label for="first_name">Внести оплату</label>
+				<p class="modal__p">грн</p>
+			</div>
+			<div class="input-field input-field__member-modal modal__balance--member-select">
+				<p class="modal__p">
+					<i class="material-icons">alarm_on</i>
+				</p>
+				<select class="filter-select">
+					<option value="1">4/67</option>
+					<option value="2">5/67</option>
+				</select>
+				<label>Группа</label>
+				<p class="modal__p">грн</p>
+			</div>
+			<div class="input-field modal__balance modal__balance--member">
+				<p class="modal__p">
+					<i class="material-icons">create</i>
+				</p>
+				<input id="modal__correct" type="text" class="validate bad">
+				<label for="modal__correct">Внести коррективу оплаты</label>
+				<p class="modal__p">грн</p>
+			</div>
+			<div class="input-field input-field--modal-textarea">
+				<p class="modal__p"></p>
+				<textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+				<label for="textarea2">Textarea</label>
+				<p class="modal__p"></p>
+			</div>
+			<div class="popup__logout popup__logout--modal popup__logout--modal-for-member">
+				<button class="btn pass__button">Закрыть</button>
+				<button class="btn">Сохранить</button>
+			</div>
+		</div>
+		<div class="modal__error">
+			<p class="modal__p">Сумма указана не верно!</p>
+		</div>
+	</div>
+</div>
+<!-- <div class="modal-footer">
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+	</div> -->
+</div>
+
+<div id="modal4" class="modal modal--students modal--members">
+	<div class="modal-content modal-content--students">
+		<div class="modal__wrapper">
+			<div class="filter__header filter__header--modal">
+				<div class="filter__title">
+					<a href="#" class="filter__a">
+						<i class="material-icons">arrow_back</i>
+					</a>
+					<h5 class="filter__h4">Крыжановский Илларион</h5>
+				</div>
+			</div>
+			<div class="modal__content-wrapper">
+				<div class="modal__header-content">
+					<div class="modal__header-info">
+						<div class="modal__active-date">
+							<div class="green-signal active"></div>
+							<p class="modal__p">20.01.2018</p>
+						</div>
+						<div class="modal__price-wrapper">
+							<h5 class="modal__h5">
+								<strong>-400</strong> грн</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__content modal__content--member">
+			<!-- <h5 class="filter__h4 filter__h4--modal-h5">Внести оплату</h5> -->
+			<div class="input-field input-field__member-modal modal__balance--member-select">
+				<p class="modal__p"></p>
+				<select class="filter-select">
+					<option value="1">Чукен-до 11.02.2018</option>
+					<option value="2">5/67</option>
+				</select>
+				<label>Заказать:</label>
+				<p class="modal__p"></p>
+			</div>
+			<div class="input-field modal__balance modal__balance--member">
+				<p class="modal__p"></p>
+				<input id="first_name" type="number" class="validate bad">
+				<label for="first_name">Цена</label>
+				<p class="modal__p">грн</p>
+			</div>
+			<div class="input-field input-field--modal-textarea">
+				<p class="modal__p"></p>
+				<textarea maxlength="20" id="textarea5" class="materialize-textarea" data-length="120"></textarea>
+				<label for="textarea5">Коммент на 20 символов</label>
+				<p class="modal__p"></p>
+			</div>
+			<div class="popup__logout popup__logout--modal popup__logout--modal-for-member">
+				<button class="btn pass__button">Закрыть</button>
+				<button class="btn">Сохранить</button>
+			</div>
+		</div>
+		<div class="modal__error">
+			<p class="modal__p">Сумма указана не верно!</p>
+		</div>
+	</div>
+</div>
+<!-- <div class="modal-footer">
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+	</div> -->
+</div>
+
+<div id="modal5" class="modal modal--students modal--members">
+	<div class="modal-content modal-content--students">
+		<div class="modal__wrapper">
+			<div class="filter__header filter__header--modal">
+				<div class="filter__title">
+					<a href="#" class="filter__a">
+						<i class="material-icons">arrow_back</i>
+					</a>
+					<h5 class="filter__h4">Отметить присутствие</h5>
+				</div>
+			</div>
+      <div class="modal__mark-buttons-wrapper">
+        <a class="waves-effect waves-light btn-large">1/67</a>
+        <a class="waves-effect waves-light btn-large">2/67</a>
+        <a class="waves-effect waves-light btn-large">3/67</a>
+        <a class="waves-effect waves-light btn-large">4/67</a>
+        <a class="waves-effect waves-light btn-large">5/67</a>
+        <a class="waves-effect waves-light btn-large">6/67</a>
+        <a class="waves-effect waves-light btn-large">7/67</a>
+        <a class="waves-effect waves-light btn-large">8/67</a>
+      </div>
+		</div>
+	</div>
+</div>
+<!-- <div class="modal-footer">
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+	</div> -->
+</div>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<script src="js/scripts.min.js"></script>
+
