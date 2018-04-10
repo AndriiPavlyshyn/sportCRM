@@ -48,7 +48,7 @@
 				</a>
 			</div>
 
-			<form class="header-search">
+			<form class="header-search mobile-none">
 				<div class="input-field">
 					<input id="search" type="search" required>
 					<label class="label-icon" for="search">
@@ -194,12 +194,14 @@
 					</a>
 				</div>
 				<div class="settings-wrapper">
-					<p>
-						<label>
-							<input type="checkbox" />
-							<span>Использовать</span>
-						</label>
-					</p>
+					<div class="checkbox-wrapper">
+						<div class="switch">
+							<label>
+								<input type="checkbox">
+								<span class="lever"></span>
+							</label>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="table-wrapper table-wrapper--settings">
@@ -250,14 +252,16 @@
 							</td>
 						</tr>
 						<tr>
-							<td><a href="#">Добавить</a></td>
+							<td>
+								<a href="#">Добавить</a>
+							</td>
 							<td></td>
 							<td></td>
 							<td></td>
 						</tr>
 					</tbody>
 				</table>
-        <!-- <div class="settings__add-line">
+				<!-- <div class="settings__add-line">
           <a href="#">Добавить</a>
         </div> -->
 			</div>
@@ -269,12 +273,14 @@
 					</a>
 				</div>
 				<div class="settings-wrapper">
-					<p>
-						<label>
-							<input type="checkbox" />
-							<span>Использовать</span>
-						</label>
-					</p>
+					<div class="checkbox-wrapper">
+						<div class="switch">
+							<label>
+								<input type="checkbox">
+								<span class="lever"></span>
+							</label>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="table-wrapper table-wrapper--settings">
@@ -324,12 +330,14 @@
 								</a>
 							</td>
 						</tr>
-            <tr>
-              <td><a href="#">Добавить</a></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
+						<tr>
+							<td>
+								<a href="#">Добавить</a>
+							</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
@@ -341,12 +349,14 @@
 					</a>
 				</div>
 				<div class="settings-wrapper">
-					<p>
-						<label>
-							<input type="checkbox" />
-							<span>Использовать</span>
-						</label>
-					</p>
+					<div class="checkbox-wrapper">
+						<div class="switch">
+							<label>
+								<input type="checkbox">
+								<span class="lever"></span>
+							</label>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="table-wrapper table-wrapper--settings">
@@ -396,12 +406,14 @@
 								</a>
 							</td>
 						</tr>
-            <tr>
-              <td><a href="#">Добавить</a></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
+						<tr>
+							<td>
+								<a href="#">Добавить</a>
+							</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
@@ -419,7 +431,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="#modal2" class="btn-floating red modal-trigger waves-effect waves-light">
+			<a href="#modal14" class="btn-floating red modal-trigger waves-effect waves-light">
 				<i class="material-icons">people</i>
 			</a>
 		</li>
@@ -469,6 +481,50 @@
 		</div>
 	</li>
 </ul>
+
+<div id="modal14" class="modal modal--students modal--members">
+	<div class="modal-content modal-content--students">
+		<div class="modal__wrapper">
+			<div class="filter__header filter__header--modal">
+				<div class="filter__title">
+					<a href="#" class="filter__a">
+						<i class="material-icons">arrow_back</i>
+					</a>
+					<h5 class="filter__h4">Цвет пояса</h5>
+				</div>
+			</div>
+		</div>
+		<div class="modal__content modal__content--check">
+			<div class="input-field">
+				<input id="modal__name" type="text" class="validate">
+				<label for="modal__name" class="">Цвет</label>
+			</div>
+			<div class="input-field">
+				<input id="modal__name" type="text" class="validate">
+				<label for="modal__name" class="">Цвет</label>
+			</div>
+			<div class="modal__settings-switch-wrapper">
+				<label class="modal__groups-label" for="">Работает с группами</label>
+				<div class="checkbox-wrapper">
+					<div class="switch">
+						<label>
+							<input type="checkbox">
+							<span class="lever"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="popup__logout popup__logout--modal popup__logout--modal-for-member">
+				<button class="btn pass__button">Закрыть</button>
+				<button class="btn">Сохранить</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- <div class="modal-footer">
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+	</div> -->
+</div>
  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

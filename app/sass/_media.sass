@@ -58,16 +58,34 @@
 				max-width: 100%
 				margin-left: 0 !important
 
-@media screen and (max-width: 780px)
-
-	.table-settings,
-	.search-wrapper--mobile
-		width: 100%
-
 	.header__logo
 		width: 70%
 
+	.search-wrapper--mobile
+		width: 80%
+		margin: 0 auto
+
+@media screen and (max-width: 780px)
+
+	.table-settings
+		width: 100%
+
+	.search-wrapper--mobile
+		width: 80%
+		margin: 0 auto
+
+		.search__label
+			display: -webkit-flex
+			display: -ms-flex
+			display: flex
+			align-items: center
+
 @media screen and (max-width: 560px)
+
+	.container
+		margin: 0
+		padding: 0
+		width: 100%
 
 	.dropdown-content--account-popup
 		width: 100% !important
