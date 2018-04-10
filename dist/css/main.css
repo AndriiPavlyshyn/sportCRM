@@ -6280,6 +6280,90 @@ nav a.sidenav-trigger {
   margin: 10px 0;
 }
 
+.modal__table--check {
+  border: 1px solid #e3dede;
+}
+
+.modal__content--check {
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.modal__content--check tbody tr td:last-child {
+  width: 60%;
+  text-align: right;
+}
+
+.modal__content--check tbody tr td i {
+  padding: 0 20px;
+}
+
+.modal__number-of-check {
+  width: 100%;
+  padding: 10px 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.modal__number-of-check .modal__h5--number {
+  margin-bottom: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  color: #689F38;
+}
+
+.modal__groups-label {
+  font-size: 1rem;
+  margin: 20px 0 10px 0;
+}
+
+.table--groups-modal tbody tr td:last-child {
+  text-align: center;
+}
+
+.table-wrapper--modal {
+  margin-bottom: 30px !important;
+}
+
+.modal__checkbox-wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.modal__checkbox-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.modal__checkbox-wrapper label {
+  margin: 10px 0;
+}
+
+.modal__checkbox-wrapper a {
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
 .login__a {
   margin-top: 30px;
 }
